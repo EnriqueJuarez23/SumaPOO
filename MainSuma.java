@@ -6,7 +6,10 @@ public class MainSuma {
         int a= opc.nextInt();
         System.out.println("Ingresa otro numero");
         int b= opc.nextInt();
-        int r= a+b;
-        System.out.println("El resultado de la suma es:"+r);
+        Suma s1 = new Suma();
+        s1.setA(a);
+        s1.setB(b);
+        System.out.println(s1.sumar());
+        System.out.println(s1.toString());
     }
 }
